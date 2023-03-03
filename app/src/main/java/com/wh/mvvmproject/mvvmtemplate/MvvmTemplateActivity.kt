@@ -10,6 +10,9 @@ import kotlinx.coroutines.launch
 
 /**
  * Created by WanHui on 2023/3/3
+ * 应用架构指南
+ * https://developer.android.google.cn/topic/architecture?hl=zh-cn
+ * https://github.com/android/nowinandroid
  */
 class MvvmTemplateActivity : BaseActivity() {
     // 在系统第一次调用活动的 onCreate() 方法时创建一个 ViewModel。

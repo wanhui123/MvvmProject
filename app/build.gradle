@@ -45,7 +45,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
 
-    //ktx扩展
+    //Android KTX : https://developer.android.google.cn/kotlin/ktx?hl=zh-cn
     implementation 'androidx.activity:activity-ktx:1.5.0'
     implementation 'androidx.fragment:fragment-ktx:1.4.0'
 
