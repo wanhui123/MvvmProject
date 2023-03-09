@@ -3,6 +3,13 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+//主要版本
+ext.versionMajor = 1
+//次要版本(0-99)
+ext.versionMinor = 0
+//补丁版本(0-99)
+ext.versionPatch = 0
+
 android {
     signingConfigs {
         key {
@@ -18,8 +25,8 @@ android {
         applicationId "com.wh.mvvmproject"
         minSdk 21
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        versionCode computeVersionCode()
+        versionName computeVersionName()
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -76,4 +83,13 @@ dependencies {
 
     //BaseRecyclerViewAdapterHelper
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.11'
+}
+
+def computeVersionCode() {
+    // 主要版本 + 次要版本 + 补丁版本
+    return (versionMajor * 10000) + (versionMinor * 100) + versionPatch
+}
+
+def computeVersionName() {
+    return "${versionMajor}.${String.format("%02d", versionMinor)}.${String.format("%02d", versionPatch)}"
 }
