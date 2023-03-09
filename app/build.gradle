@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        key {
+            storeFile file('/Users/wanhui/AndroidStudioProjects/MvvmProject/mvvm.jks')
+            storePassword 'wh2023'
+            keyPassword 'wh2023'
+            keyAlias 'mvvm'
+        }
+    }
     compileSdk 31
 
     defaultConfig {
@@ -20,6 +28,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.key
         }
     }
     compileOptions {
