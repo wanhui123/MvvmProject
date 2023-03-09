@@ -41,6 +41,22 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    // 这个配置指定了一个应用 bundle 该如何根据
+    // 语言、屏幕像素密度以及 cpu 架构 (abi) 来分拆 apk。
+    // 默认值为 true
+    // 这意味着每个不同的相关配置会生成一个分解后的 apk。
+    bundle {
+        language {
+            enableSplit = false //app内置语言切换功能
+        }
+        density {
+            enableSplit = false
+        }
+        abi {
+            enableSplit = true
+        }
+    }
 }
 
 dependencies {
