@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.wh.mvvmproject">
 
     <application
@@ -7,9 +8,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="${NETWORK_SECURITY_CONFIG}"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MvvmProject">
+        android:theme="@style/Theme.MvvmProject"
+        tools:targetApi="n">
         <activity
             android:name=".main.MainActivity"
             android:exported="true">
@@ -20,8 +23,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".mvvmtemplate.MvvmTemplateActivity"/>
-        <activity android:name=".proxy.ProxyActivity"/>
+        <activity android:name=".mvvmtemplate.MvvmTemplateActivity" />
+        <activity android:name=".proxy.ProxyActivity" />
     </application>
 
 </manifest>
