@@ -1,4 +1,6 @@
-MvvmProject 如何构建一个完整的app
+MvvmProject 如何构建一个完整的app 
+
+https://github.com/lilongweidev
 
 Android 8.0系统的应用图标适配
 https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650242527&idx=1&sn=5800fa03d2f1a0d990be6fa4f9bfc0f8&chksm=88638cb0bf1405a6da9f29e8c65a4d102f3f5ad2e4d4fda94a0844705603dc9c1c420b68d49d&scene=27
