@@ -16,3 +16,10 @@ https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650242841&idx=1&sn=6fd0a5
 
 Android网络安全配置network-security-config区分正式服和测试服
 https://blog.csdn.net/liuqinhou/article/details/128331433?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-128331433-blog-128214849.pc_relevant_3mothn_strategy_recovery&spm=1001.2101.3001.4242.1&utm_relevant_index=3
+
+
+AndroidQQ登录接入详细介绍（kotlin搭建）
+https://blog.csdn.net/xyh15060341956/article/details/122716185
+
+
+
