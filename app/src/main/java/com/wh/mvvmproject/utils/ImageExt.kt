@@ -17,7 +17,7 @@ import java.io.OutputStream
 
 /**
  * 兼容Android 12支持保存图片到相册
- * https://zhuanlan.zhihu.com/p/568501496
+ * https://github.com/hushenghao/MediaStoreDemo
  */
 
 private const val TAG = "ImageExt"
