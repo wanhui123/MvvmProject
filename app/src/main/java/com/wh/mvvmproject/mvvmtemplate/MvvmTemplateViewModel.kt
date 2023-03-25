@@ -1,6 +1,7 @@
 package com.wh.mvvmproject.mvvmtemplate
 
 import com.wh.mvvmproject.base.BaseViewModel
+import com.wh.mvvmproject.model.bean.Banner
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -15,6 +16,9 @@ class MvvmTemplateViewModel : BaseViewModel() {
     private val _uiState = MutableStateFlow(DiceUiState())
     val uiState: StateFlow<DiceUiState> = _uiState.asStateFlow()
 
+    private val _bannerUiState = MutableStateFlow(BannerUiState())
+    val bannerUiState = _bannerUiState.asStateFlow()
+
     // Handle business logic
     fun rollDice() {
         _uiState.update { currentState ->
@@ -25,10 +29,18 @@ class MvvmTemplateViewModel : BaseViewModel() {
             )
         }
     }
+
+    fun getBanner(){
+
+    }
 }
 
 data class DiceUiState(
     val firstDieValue: Int? = null,
     val secondDieValue: Int? = null,
     val numberOfRolls: Int = 0,
+)
+
+data class BannerUiState(
+    val bannerList: List<Banner> ? = null
 )
