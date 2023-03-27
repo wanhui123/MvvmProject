@@ -2,6 +2,9 @@ MvvmProject 如何构建一个完整的app
 
 https://github.com/lilongweidev
 
+KotlinMVVM
+https://github.com/Jeremyzwc/WanAndroidAppKotlinMVVM
+
 Android 8.0系统的应用图标适配
 https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650242527&idx=1&sn=5800fa03d2f1a0d990be6fa4f9bfc0f8&chksm=88638cb0bf1405a6da9f29e8c65a4d102f3f5ad2e4d4fda94a0844705603dc9c1c420b68d49d&scene=27
 
@@ -21,5 +24,10 @@ https://blog.csdn.net/liuqinhou/article/details/128331433?utm_medium=distribute.
 AndroidQQ登录接入详细介绍（kotlin搭建）
 https://blog.csdn.net/xyh15060341956/article/details/122716185
 
+Android——Gradle自动打包上传蒲公英并进行钉钉群提醒
+https://blog.csdn.net/u012230055/article/details/124753120
+
+Android Kotlin之Flow数据流
+https://blog.csdn.net/u013700502/article/details/120526170
 
 

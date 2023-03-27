@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.wh.mvvmproject">
-
-    <!--  网络权限  -->
+    <!-- 网络权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -17,6 +16,9 @@
         android:theme="@style/Theme.MvvmProject"
         tools:targetApi="n">
         <activity
+            android:name=".flow.FlowActivity"
+            android:exported="false" />
+        <activity
             android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -25,7 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".mvvmtemplate.MvvmTemplateActivity" />
         <activity android:name=".proxy.ProxyActivity" />
     </application>
